@@ -5,7 +5,7 @@ import { Mail, Phone, MapPin } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="bg-[#3CB371] text-white">
+    <footer className="bg-[#10827d] text-white">
       {/* 🔹 Linha divisória superior */}
       <div className="w-full h-[2px] bg-white/20"></div>
 
@@ -27,7 +27,7 @@ export default function Footer() {
             </h2>
         </div>
           <p className="text-sm text-white/90 leading-relaxed">
-            Fábrica de uniformes profissionais com qualidade, conforto e
+            Referência de uniformes profissionais com qualidade, conforto e
             personalização para sua empresa. Produzimos com excelência para destacar a sua marca.
           </p>
         </div>
@@ -36,11 +36,11 @@ export default function Footer() {
         <div className="md:mx-auto">
           <h3 className="text-lg font-semibold mb-4 border-l-4 border-white/60 pl-3">Navegação</h3>
           <ul className="space-y-2 text-white/90">
-            <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
-            <li><Link href="/" className="hover:text-white transition-colors">Sobre</Link></li>
-            <li><Link href="/" className="hover:text-white transition-colors">Produtos</Link></li>
-            <li><Link href="/" className="hover:text-white transition-colors">Serviços</Link></li>
-            <li><Link href="/" className="hover:text-white transition-colors">Contato</Link></li>
+            <li><Link href="/" className="hover:text-gray-900 transition-colors">Home</Link></li>
+            <li><Link href="/" className="hover:text-gray-900 transition-colors">Quem Somos</Link></li>
+            <li><Link href="/" className="hover:text-gray-900 transition-colors">Produtos</Link></li>
+            <li><Link href="/" className="hover:text-gray-900 transition-colors">Serviços</Link></li>
+            <li><Link href="/" className="hover:text-gray-900 transition-colors">Contato</Link></li>
           </ul>
         </div>
 
@@ -50,22 +50,22 @@ export default function Footer() {
           <ul className="space-y-3 text-white/90">
             <li className="flex items-center gap-2">
               <MapPin className="w-5 h-5 text-white/80" />
-              Rua Exemplo, 123 – Cidade, UF
+              Rua Açafrão, 70 – São Paulo, SP
             </li>
             <li className="flex items-center gap-2">
               <Phone className="w-5 h-5 text-white/80" />
-              (11) 99999-9999
+              (11) 2646-6842
             </li>
             <li className="flex items-center gap-2">
               <Mail className="w-5 h-5 text-white/80" />
-              vendas@jjuniformes-sp.com.br
+              atendimento@jjuniformes-sp.com.br
             </li>
           </ul>
         </div>
       </div>
 
       {/* Linha inferior */}
-      <div className="py-4 bg-[#369d65]">
+      <div className="py-4 bg-[#10827d]">
         <p className="text-center text-sm text-white/80">
           © {new Date().getFullYear()} <span className="font-semibold text-white">JJ Uniformes</span> — Todos os direitos reservados.
         </p>

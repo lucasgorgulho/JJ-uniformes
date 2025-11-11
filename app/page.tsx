@@ -1,6 +1,6 @@
 export default function HomePage() {
   return (
-    <section className="flex flex-col items-center justify-center text-center min-h-[70vh] bg-gradient-to-b from-[#518DC1] to-[#3CB371] text-white px-4">
+    <section className="flex flex-col items-center justify-center text-center min-h-[70vh] bg-gradient-to-b from-[#FFFFFF] to-[#FFFFFF] text-black px-4">
       <div className="max-w-2xl">
         {/* Título principal */}
         <img 
@@ -16,7 +16,7 @@ export default function HomePage() {
         </h1>
 
         {/* Mensagem de desenvolvimento */}
-        <p className="text-lg md:text-xl mb-8 text-white/90">
+        <p className="text-lg md:text-xl mb-8">
           Nosso novo site está sendo desenvolvido e em breve estará no ar!
         </p>
 
@@ -24,7 +24,7 @@ export default function HomePage() {
         <div className="animate-bounce">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-8 w-8 mx-auto text-white/80"
+            className="h-8 w-8 mx-auto"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"

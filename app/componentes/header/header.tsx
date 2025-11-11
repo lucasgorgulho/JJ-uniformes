@@ -6,7 +6,7 @@ import MobileMenu from "./MobileMenu";
 
 export default function Header() {
   return (
-    <header className="bg-[#518DC1] shadow relative">
+    <header className="bg-[#10827d] shadow relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-26">
           
@@ -15,19 +15,19 @@ export default function Header() {
             <Image
               src="/Distribuidora.svg"
               alt="JJ Uniformes"
-              width={150}
-              height={150}
+              width={110}
+              height={110}
               className="object-contain"
             />
           </Link>
 
           {/* Desktop Menu */}
           <nav className="hidden md:flex space-x-8">
-            <Link href="/" className="text-gray-700 hover:text-gray-900">Home</Link>
-            <Link href="/" className="text-gray-700 hover:text-gray-900">Sobre</Link>
-            <Link href="/" className="text-gray-700 hover:text-gray-900">Produtos</Link>
-            <Link href="/" className="text-gray-700 hover:text-gray-900">Serviços</Link>
-            <Link href="/" className="text-gray-700 hover:text-gray-900">Contato</Link>
+            <Link href="/" className="text-white-700 hover:text-gray-900">Home</Link>
+            <Link href="/" className="text-white-700 hover:text-gray-900">Quem Somos</Link>
+            <Link href="/" className="text-white-700 hover:text-gray-900">Produtos</Link>
+            <Link href="/" className="text-white-700 hover:text-gray-900">Serviços</Link>
+            <Link href="/" className="text-white-700 hover:text-gray-900">Contato</Link>
           </nav>
 
           {/* Botão Mobile */}
