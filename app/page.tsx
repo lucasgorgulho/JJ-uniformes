@@ -6,8 +6,8 @@ import Image from "next/image";
 
 const items = [
   { title: "Linha Fabrica", image: "/banner/fabril.png", bg: "from-blue-200 to-blue-400" },
-  { title: "Linha Hospitalar", image: "/banner/hospitalar.png", bg: "from-green-200 to-green-400" },
-  { title: "Linha Escritório", image: "/banner/escritorio.png", bg: "from-yellow-200 to-yellow-400" },
+  { title: "Linha Hospitalar", image: "/banner/hospitalar.svg", bg: "from-green-200 to-green-400" },
+  { title: "Linha Escritório", image: "/banner/escritorio.svg", bg: "from-yellow-200 to-yellow-400" },
   { title: "Linha de Segurança", image: "/banner/seguranca.png", bg: "from-red-200 to-red-400" },
 ];
 
