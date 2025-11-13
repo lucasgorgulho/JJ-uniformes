@@ -16,7 +16,7 @@ const menuItems = [
       { label: "...", path: "/" },
     ],
   },
-  { label: "Sobre", path: "/" },
+  { label: "Quem Somos", path: "/quem_somos" },
   { label: "Serviços", path: "/" },
   { label: "Contato", path: "/" },
 ];
