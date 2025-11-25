@@ -1,74 +1,117 @@
-"use client"
-
 import Link from "next/link"
-import { Mail, Phone, MapPin } from "lucide-react"
+import { Phone, Mail, MapPin, Instagram, Facebook } from "lucide-react"
 
-export default function Footer() {
+export function Footer() {
   return (
-    <footer className="bg-[#10827d] text-white">
-      {/* 🔹 Linha divisória superior */}
-      <div className="w-full h-[2px] bg-white/20"></div>
+    <footer className="bg-black text-white">
+      {/* Main Footer */}
+      <div className="container mx-auto px-5 sm:px-6 py-10 sm:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Company Info */}
+          <div className="sm:col-span-2 lg:col-span-1">
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-10 h-10 bg-teal-600 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-lg">JJ</span>
+              </div>
+              <span className="text-lg font-bold">Uniformes</span>
+            </div>
+              <p className="text-gray-400 text-sm leading-relaxed mb-4">
+              Sua loja especializada em uniformes profissionais. Qualidade e agilidade para sua empresa.
+            </p>
+            <div className="flex gap-3">
+              <a
+                href="https://instagram.com"
+                className="w-10 h-10 bg-gray-800 hover:bg-teal-600 rounded-lg flex items-center justify-center transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a
+                href="https://facebook.com"
+                className="w-10 h-10 bg-gray-800 hover:bg-teal-600 rounded-lg flex items-center justify-center transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
 
-      {/* Seção principal */}
-      <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-10 border-b border-white/20">
-        
-        {/* Coluna 1 – Logo e descrição */}
-        <div>
-          <div className="flex items-center gap-2 mb-4">
-            <img 
-            src="/Distribuidora.svg" 
-            alt="JJ Uniformes" 
-            width={50}
-            height={50}
-            className="object-contain"
-            />
-            <h2 className="text-2xl font-extrabold tracking-wide">
-            Uniformes
-            </h2>
-        </div>
-          <p className="text-sm text-white/90 leading-relaxed">
-            Referência de uniformes profissionais com qualidade, conforto e
-            personalização para sua empresa. Produzimos com excelência para destacar a sua marca.
-          </p>
-        </div>
+          {/* Quick Links */}
+          <div>
+            <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider text-gray-300">Links Rápidos</h4>
+            <ul className="space-y-2.5 text-sm">
+              {[
+                { href: "/produtos", label: "Produtos" },
+                { href: "/catalogo", label: "Catálogo" },
+                { href: "/orcamento", label: "Orçamento" },
+                { href: "/about", label: "Sobre Nós" },
+              ].map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-gray-400 hover:text-teal-400 transition-colors">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-        {/* Coluna 2 – Navegação */}
-        <div className="md:mx-auto">
-          <h3 className="text-lg font-semibold mb-4 border-l-4 border-white/60 pl-3">Navegação</h3>
-          <ul className="space-y-2 text-white/90">
-            <li><Link href="/" className="hover:text-gray-900 transition-colors">Home</Link></li>
-            <li><Link href="/" className="hover:text-gray-900 transition-colors">Quem Somos</Link></li>
-            <li><Link href="/" className="hover:text-gray-900 transition-colors">Produtos</Link></li>
-            <li><Link href="/" className="hover:text-gray-900 transition-colors">Serviços</Link></li>
-            <li><Link href="/" className="hover:text-gray-900 transition-colors">Contato</Link></li>
-          </ul>
-        </div>
+          {/* Support */}
+          <div>
+            <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider text-gray-300">Suporte</h4>
+            <ul className="space-y-2.5 text-sm">
+              {[
+                { href: "/faq", label: "Perguntas Frequentes" },
+                { href: "/delivery", label: "Entrega" },
+                { href: "/exchange-return", label: "Trocas e Devoluções" },
+                { href: "/terms", label: "Termos de Uso" },
+              ].map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-gray-400 hover:text-teal-400 transition-colors">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-        {/* Coluna 3 – Contato */}
-        <div>
-          <h3 className="text-lg font-semibold mb-4 border-l-4 border-white/60 pl-3">Contato</h3>
-          <ul className="space-y-3 text-white/90">
-            <li className="flex items-center gap-2">
-              <MapPin className="w-5 h-5 text-white/80" />
-              Rua Açafrão, 70 – São Paulo, SP
-            </li>
-            <li className="flex items-center gap-2">
-              <Phone className="w-5 h-5 text-white/80" />
-              (11) 2646-6842
-            </li>
-            <li className="flex items-center gap-2">
-              <Mail className="w-5 h-5 text-white/80" />
-              atendimento@jjuniformes-sp.com.br
-            </li>
-          </ul>
+          {/* Contact */}
+          <div>
+            <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider text-gray-300">Contato</h4>
+            <ul className="space-y-3 text-sm">
+              <li>
+                <a
+                  href="https://wa.me/5511987654321"
+                  className="flex items-center gap-2 text-gray-400 hover:text-teal-400 transition-colors"
+                >
+                  <Phone className="w-4 h-4" />
+                  (11) 98765-4321
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:contato@jjuniformes.com.br"
+                  className="flex items-center gap-2 text-gray-400 hover:text-teal-400 transition-colors"
+                >
+                  <Mail className="w-4 h-4" />
+                  contato@jjuniformes.com.br
+                </a>
+              </li>
+              <li className="flex items-start gap-2 text-gray-400">
+                <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
+                <span>São Paulo, SP</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
-      {/* Linha inferior */}
-      <div className="py-4 bg-[#10827d]">
-        <p className="text-center text-sm text-white/80">
-          © {new Date().getFullYear()} <span className="font-semibold text-white">JJ Uniformes</span> — Todos os direitos reservados.
-        </p>
+      {/* Bottom Bar */}
+      <div className="border-t border-gray-800">
+        <div className="container mx-auto px-5 sm:px-6 py-4">
+          <p className="text-gray-500 text-xs sm:text-sm text-center">
+            © 2025 JJ Uniformes. Todos os direitos reservados.
+          </p>
+        </div>
       </div>
     </footer>
   )
