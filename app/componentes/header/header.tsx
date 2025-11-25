@@ -27,7 +27,7 @@ export default function Header() {
               <span
                 className="block"
                 style={{
-                  color: "#004b44",
+                  color: "#ffffffff",
                   fontSize: "clamp(1rem, 2.5vw, 1.5rem)",
                   lineHeight: "1.2",
                 }}
@@ -37,7 +37,7 @@ export default function Header() {
               <span
                 className="block"
                 style={{
-                  color: "#169e9c",
+                  color: "#ffffffff",
                   fontSize: "clamp(1rem, 2.5vw, 1.5rem)",
                   lineHeight: "1.2",
                 }}
