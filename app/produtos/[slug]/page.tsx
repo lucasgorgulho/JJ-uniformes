@@ -4,7 +4,7 @@ import { getProductBySlug, getRelatedProducts, products } from "@/lib/products-d
 import Header from "@/app/componentes/header/header"
 import { ProductDetail } from "@/app/componentes/produtos/product-detail"
 import { RelatedProducts } from "@/app/componentes/produtos/related-products"
-import Footer from "@/app/componentes/footer/footer"
+import { Footer } from "@/app/componentes/footer/footer"
 
 interface ProductPageProps {
   params: Promise<{
