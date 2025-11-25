@@ -55,14 +55,17 @@ export default function Header() {
             <Link href="/quem_somos" className="text-white font-medium hover:text-gray-100 transition">
               Quem Somos
             </Link>
-            <Link href="/" className="text-white font-medium hover:text-gray-100 transition">
+            <Link href="/produtos" className="text-white font-medium hover:text-gray-100 transition">
               Produtos
             </Link>
-            <Link href="/" className="text-white font-medium hover:text-gray-100 transition">
-              Serviços
+            <Link href="/orcamento" className="text-white font-medium hover:text-gray-100 transition">
+              Orçamento
             </Link>
-            <Link href="/" className="text-white font-medium hover:text-gray-100 transition">
+            <Link href="/contato" className="text-white font-medium hover:text-gray-100 transition">
               Contato
+            </Link>
+            <Link href="/catalogo" className="text-white font-medium hover:text-gray-100 transition">
+              Catalogo
             </Link>
           </nav>
 
