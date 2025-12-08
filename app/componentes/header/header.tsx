@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import MobileMenu from "./MobileMenu";
 
 export default function Header() {
   return (
@@ -48,31 +47,28 @@ export default function Header() {
           </Link>
 
           {/* 🖥️ Menu Desktop */}
-          <nav className="hidden md:flex space-x-8">
-            <Link href="/" className="text-white font-medium hover:text-gray-100 transition">
+          <nav className="hidden md:flex space-x-4">
+            <Link href="/" className="text-white text-base font-medium hover:text-gray-100 transition">
               Home
             </Link>
-            <Link href="/quem_somos" className="text-white font-medium hover:text-gray-100 transition">
+            <Link href="/quem_somos" className="text-white text-base font-medium hover:text-gray-100 transition">
               Quem Somos
             </Link>
-            <Link href="/produtos" className="text-white font-medium hover:text-gray-100 transition">
+            <Link href="/produtos" className="text-white text-base font-medium hover:text-gray-100 transition">
               Produtos
             </Link>
-            <Link href="/orcamento" className="text-white font-medium hover:text-gray-100 transition">
+            <Link href="/orcamento" className="text-white text-base font-medium hover:text-gray-100 transition">
               Orçamento
             </Link>
-            <Link href="/contato" className="text-white font-medium hover:text-gray-100 transition">
+            <Link href="/contato" className="text-white text-base font-medium hover:text-gray-100 transition">
               Contato
             </Link>
-            <Link href="/catalogo" className="text-white font-medium hover:text-gray-100 transition">
+            <Link href="/catalogo" className="text-white text-base font-medium hover:text-gray-100 transition">
               Catalogo
             </Link>
           </nav>
 
-          {/* 📱 Menu Mobile */}
-          <div className="md:hidden">
-            <MobileMenu />
-          </div>
+         
         </div>
       </div>
 

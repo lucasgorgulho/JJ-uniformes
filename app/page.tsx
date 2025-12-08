@@ -1,38 +1,61 @@
-"use client";
 
-import Carousel from "./componentes/home/Carousel";
-import { ShieldCheck, Shirt, Truck, Sparkles, Clock, Users } from "lucide-react";
-import Image from "next/image";
-import { HeroSection } from "./componentes/home/hero-section";
-import { ImpactSection } from "./componentes/home/impact-section";
-import { ProductCharacteristics } from "./componentes/home/product-characteristics";
-import { ProfessionalShowcase } from "./componentes/home/professional-showcase";
-import { ProductFeatures } from "./componentes/home/product-features";
+import Link from "next/link"
+import { ArrowRight } from "lucide-react"
+import { ProductCharacteristics } from "./componentes/home/product-characteristics"
+import { ProfessionalShowcase } from "./componentes/home/professional-showcase"
+import { PromotionalBanner } from "./componentes/home/promotional-banner"
+import { DiscoverSection } from "./componentes/home/discover-section"
+import { ImpactSection } from "./componentes/home/impact-section"
+import { HeroSection } from "./componentes/home/hero-section"
+import { ProductFeatures } from "./componentes/home/product-features"
+import Carousel from "./componentes/home/Carousel"
 
-const items = [
-  { title: "Linha Fabrica", image: "/banner/fabril.png", bg: "from-blue-200 to-blue-400" },
-  { title: "Linha Hospitalar", image: "/banner/hospitalar.svg", bg: "from-green-200 to-green-400" },
-  { title: "Linha Escritório", image: "/banner/escritorio.svg", bg: "from-yellow-200 to-yellow-400" },
-  { title: "Linha de Segurança", image: "/banner/seguranca.png", bg: "from-red-200 to-red-400" },
-];
+
+const carouselItems = [
+  { title: "Linha Executiva", image: "/professional-man-in-elegant-black-business-suit.jpg" },
+  { title: "Linha Hospitalar", image: "/teal-medical-scrubs-uniform.jpg" },
+  { title: "Linha Industrial", image: "/professional-working-outdoors.jpg" },
+  { title: "Linha Segurança", image: "/navy-blue-professional-uniform.jpg" },
+  { title: "Linha Corporativa", image: "/beige-professional-uniform-jacket.jpg" },
+]
 
 export default function HomePage() {
   return (
-    <main className="bg-gradient-to-b from-[#ffffff] to-[#f7f8fa] min-h-screen">
-      {/* 🧷 Banner principal */}
-      
+    <main className="min-h-screen">
       <HeroSection />
-     
       <ProductFeatures />
-      <section>
-        <Carousel items={items} />
+
+      {/* Carousel Section */}
+      <section className="py-10 bg-gradient-to-b from-white to-gray-50">
+        <div>
+          
+          <Carousel items={carouselItems} />
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-8">
+            <Link
+              href="/produtos"
+              className="w-full sm:w-auto bg-teal-600 hover:bg-teal-500 text-white px-5 py-2.5 rounded-md font-medium text-sm transition-colors inline-flex items-center justify-center gap-2"
+            >
+              Conheça nossos produtos
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/quem_somos"
+              className="w-full sm:w-auto text-slate-600 hover:text-teal-600 px-5 py-2.5 rounded-md font-medium text-sm transition-colors inline-flex items-center justify-center gap-2"
+            >
+              Quem somos
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
       </section>
-      
-      <ProfessionalShowcase />
-      <ImpactSection />
+
       <ProductCharacteristics />
+      <DiscoverSection />
+      <ProfessionalShowcase />
+      <PromotionalBanner />
       
-      
+      <ImpactSection />
     </main>
-  );
+  )
 }

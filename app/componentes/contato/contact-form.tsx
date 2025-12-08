@@ -3,10 +3,11 @@
 import type React from "react"
 
 import { useState } from "react"
+
+import { Facebook, Instagram, Linkedin, Send, MessageCircle, CheckCircle2, X } from "lucide-react"
 import { Button } from "../ui/button"
 import { Input } from "../ui/input"
 import { Textarea } from "../ui/textarea"
-import { Facebook, Instagram, Linkedin, Send, MessageCircle, CheckCircle2, X } from "lucide-react"
 
 export function ContactForm() {
   const [formStatus, setFormStatus] = useState<"idle" | "sending" | "sent">("idle")

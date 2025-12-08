@@ -1,4 +1,5 @@
-import { CatalogDownloadSection } from "../componentes/catalogo/catalog-download-section";
+
+import CatalogoDownload from "../componentes/catalogo/catalog-download-section";
 import { CatalogHero } from "../componentes/catalogo/catalog-hero";
 
 
@@ -8,7 +9,7 @@ export default function CatalogoPage() {
       
       <main className="flex-1">
         <CatalogHero />
-        <CatalogDownloadSection />
+        <CatalogoDownload />
       </main>
     
     </div>

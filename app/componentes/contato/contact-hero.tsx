@@ -31,44 +31,7 @@ export function ContactHero() {
               Entre em contato com nossa equipe especializada.
             </p>
 
-            <div className="grid grid-cols-2 gap-2 sm:gap-3 max-w-md mx-auto lg:mx-0">
-              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-xl p-2.5 sm:p-3 border border-white/10">
-                <div className="w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-3.5 h-3.5 text-white" />
-                </div>
-                <div className="min-w-0">
-                  <p className="text-[10px] text-gray-400">Telefone</p>
-                  <p className="text-white font-medium text-xs truncate">(11) 9999-9999</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-xl p-2.5 sm:p-3 border border-white/10">
-                <div className="w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-3.5 h-3.5 text-white" />
-                </div>
-                <div className="min-w-0">
-                  <p className="text-[10px] text-gray-400">E-mail</p>
-                  <p className="text-white font-medium text-xs truncate">contato@jj.com</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-xl p-2.5 sm:p-3 border border-white/10">
-                <div className="w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-3.5 h-3.5 text-white" />
-                </div>
-                <div className="min-w-0">
-                  <p className="text-[10px] text-gray-400">Endereço</p>
-                  <p className="text-white font-medium text-xs truncate">São Paulo, SP</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-xl p-2.5 sm:p-3 border border-white/10">
-                <div className="w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Clock className="w-3.5 h-3.5 text-white" />
-                </div>
-                <div className="min-w-0">
-                  <p className="text-[10px] text-gray-400">Horário</p>
-                  <p className="text-white font-medium text-xs truncate">Seg-Sex: 8h-18h</p>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>

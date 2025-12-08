@@ -3,7 +3,6 @@
 import type React from "react"
 
 import Image from "next/image"
-import { Search } from "lucide-react"
 import { useState } from "react"
 
 interface ProductsHeroBannerProps {
@@ -21,7 +20,7 @@ export function ProductsHeroBanner({ onSearch }: ProductsHeroBannerProps) {
   return (
     <section className="relative min-h-[200px] sm:min-h-[280px] md:min-h-[350px] overflow-hidden">
       <Image
-        src="/fashion-showroom-with-professional-uniforms-on-dis.jpg"
+        src="/fashion-catalog-photoshoot-with-professional-cloth.jpg"
         alt="JJ Uniformes - Nossos Produtos"
         fill
         className="object-cover"
@@ -50,7 +49,19 @@ export function ProductsHeroBanner({ onSearch }: ProductsHeroBannerProps) {
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="w-full h-10 sm:h-11 md:h-12 pl-10 sm:pl-11 pr-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent transition-all text-sm"
               />
-              <Search className="absolute left-3.5 sm:left-4 top-1/2 -translate-y-1/2 w-4 h-4 sm:w-5 sm:h-5 text-white/60" />
+              <svg
+                className="absolute left-3.5 sm:left-4 top-1/2 -translate-y-1/2 w-4 h-4 sm:w-5 sm:h-5 text-white/60"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
             </form>
           </div>
         </div>
