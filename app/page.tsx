@@ -9,6 +9,7 @@ import { ImpactSection } from "./componentes/home/impact-section"
 import { HeroSection } from "./componentes/home/hero-section"
 import { ProductFeatures } from "./componentes/home/product-features"
 import Carousel from "./componentes/home/Carousel"
+import { StitchedCarousel } from "./componentes/home/stitched-carousel"
 
 
 const carouselItems = [
@@ -26,10 +27,10 @@ export default function HomePage() {
       <ProductFeatures />
 
       {/* Carousel Section */}
-      <section className="py-10 bg-gradient-to-b from-white to-gray-50">
+      <section className=" bg-gradient-to-b from-white to-gray-50">
         <div>
           
-          <Carousel items={carouselItems} />
+          <StitchedCarousel/>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-8">
             <Link

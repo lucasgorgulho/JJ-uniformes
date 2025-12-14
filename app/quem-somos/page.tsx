@@ -7,7 +7,7 @@ export default function SobrePage() {
     <main className="min-h-screen">
       <section className="relative min-h-[280px] sm:min-h-[350px] md:min-h-[450px] overflow-hidden">
         <Image
-          src="/professional-team-wearing-corporate-uniforms-modern.jpg"
+          src="/quem-somos/hero.jpg"
           alt="Equipe JJ Uniformes"
           fill
           className="object-cover"

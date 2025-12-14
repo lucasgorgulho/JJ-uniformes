@@ -2,7 +2,7 @@ export function ProductFeatures() {
   const highlights = ["Tecidos de alta qualidade", "Personalização completa", "Entrega rápida"]
 
   return (
-    <section className="py-10 md:py-16 bg-white">
+    <section className="  bg-white">
       <div className="container mx-auto px-6 text-center max-w-3xl">
         <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 md:mb-4 text-balance">
           Características dos Nossos Produtos

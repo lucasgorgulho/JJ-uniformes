@@ -15,146 +15,41 @@ export interface Product {
 
 export const products: Product[] = [
   {
-    id: 1,
-    name: "Jaleco Médico Premium",
-    slug: "jaleco-medico-premium",
-    category: "Saúde",
-    image: "/teal-medical-scrubs-uniform.jpg",
-    images: ["/teal-medical-scrubs-uniform.jpg", "/medical-scrubs-hanging.jpg"],
-    colors: [
-      { name: "Branco", hex: "#FFFFFF" },
-      { name: "Azul Claro", hex: "#87CEEB" },
-    ],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
-    materials: "65% Poliéster, 35% Algodão - Tecido Gabardine Premium",
-    description: "Jaleco médico de alta qualidade, ideal para profissionais da saúde que buscam conforto e elegância.",
-    features: ["Tecido anti-rugas", "Bolsos funcionais", "Corte anatômico", "Fácil lavagem"],
-    careInstructions: ["Lavar à máquina até 40°C", "Não usar alvejante", "Passar em temperatura média"],
-  },
-  {
-    id: 2,
-    name: "Camisa Social Executiva",
-    slug: "camisa-social-executiva",
-    category: "Corporativo",
-    image: "/professional-man-in-elegant-black-business-suit.jpg",
-    images: ["/professional-man-in-elegant-black-business-suit.jpg", "/professional-business-team-wearing-elegant-corpora.jpg"],
-    colors: [
-      { name: "Branco", hex: "#FFFFFF" },
-      { name: "Azul", hex: "#1E40AF" },
-      { name: "Cinza", hex: "#6B7280" },
-    ],
-    sizes: ["P", "M", "G", "GG"],
-    materials: "100% Algodão Egípcio",
-    description: "Camisa social premium para ambientes corporativos, confeccionada com tecido de alta qualidade.",
-    features: ["Tecido respirável", "Colarinho reforçado", "Botões de qualidade", "Corte slim fit"],
-    careInstructions: ["Lavar à máquina até 30°C", "Passar a ferro", "Não usar secadora"],
-  },
-  {
-    id: 3,
-    name: "Scrub Cirúrgico Confort",
-    slug: "scrub-cirurgico-confort",
-    category: "Saúde",
-    image: "/teal-medical-scrubs-uniform.jpg",
-    images: ["/teal-medical-scrubs-uniform.jpg", "/medical-scrubs-hanging.jpg"],
-    colors: [
-      { name: "Verde Cirúrgico", hex: "#14B8A6" },
-      { name: "Azul", hex: "#3B82F6" },
-      { name: "Bordô", hex: "#991B1B" },
-    ],
-    sizes: ["PP", "P", "M", "G", "GG"],
-    materials: "100% Poliéster Dry-Fit",
-    description: "Conjunto scrub para profissionais da saúde, oferecendo máximo conforto durante longas jornadas.",
-    features: ["Tecido antibacteriano", "Secagem rápida", "Elástico confortável", "Múltiplos bolsos"],
-    careInstructions: ["Lavar à máquina", "Não usar amaciante", "Secar à sombra"],
-  },
-  {
-    id: 4,
-    name: "Macacão Industrial Reforçado",
-    slug: "macacao-industrial-reforcado",
-    category: "Industrial",
-    image: "/professional-working-outdoors.jpg",
-    images: ["/professional-working-outdoors.jpg", "/modern-factory-industrial-facility-manufacturing.jpg"],
-    colors: [
-      { name: "Azul Marinho", hex: "#1E3A5F" },
-      { name: "Cinza", hex: "#4B5563" },
-      { name: "Laranja", hex: "#EA580C" },
-    ],
-    sizes: ["P", "M", "G", "GG", "XGG"],
-    materials: "100% Algodão Brim Pesado 280g",
-    description: "Macacão industrial de alta resistência, ideal para ambientes de trabalho que exigem proteção.",
-    features: ["Costuras reforçadas", "Zíper resistente", "Faixas refletivas", "Bolsos multiuso"],
-    careInstructions: ["Lavar à máquina até 60°C", "Pode usar alvejante", "Secar normalmente"],
-  },
-  {
-    id: 5,
-    name: "Dólmã Chef Clássico",
-    slug: "dolma-chef-classico",
-    category: "Gastronomia",
-    image: "/professional-uniform-folded.jpg",
-    images: [
-      "/professional-uniform-folded.jpg",
-      "/beige-professional-uniform-jacket.jpg",
-    ],
-    colors: [
-      { name: "Branco", hex: "#FFFFFF" },
-      { name: "Preto", hex: "#1F2937" },
-    ],
-    sizes: ["P", "M", "G", "GG"],
-    materials: "65% Poliéster, 35% Algodão",
-    description: "Dólmã clássico para chefs e profissionais de gastronomia, com design elegante e funcional.",
-    features: ["Botões duplos", "Manga longa ajustável", "Tecido respirável", "Resistente a manchas"],
-    careInstructions: ["Lavar à máquina até 40°C", "Passar em temperatura alta", "Não usar alvejante"],
-  },
-  {
-    id: 6,
-    name: "Polo Corporativa Premium",
-    slug: "polo-corporativa-premium",
-    category: "Corporativo",
-    image: "/white-casual-polo-uniform.jpg",
-    images: [
-      "/white-casual-polo-uniform.jpg",
-      "/professional-team-wearing-corporate-uniforms-modern.jpg",
-    ],
-    colors: [
-      { name: "Branco", hex: "#FFFFFF" },
-      { name: "Azul Marinho", hex: "#1E3A5F" },
-      { name: "Preto", hex: "#1F2937" },
-      { name: "Verde", hex: "#059669" },
-    ],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
-    materials: "100% Algodão Piquet",
-    description: "Polo corporativa de alta qualidade, perfeita para uniformes empresariais com estilo.",
-    features: ["Gola reforçada", "Tecido premium", "Bordado disponível", "Cores sólidas"],
-    careInstructions: ["Lavar à máquina até 30°C", "Não usar secadora", "Passar em temperatura baixa"],
-  },
-  // Linha Fábrica
-  {
-    id: 7,
-    name: "Uniforme Industrial Profissional 01",
-    slug: "uniforme-industrial-01",
-    category: "Industrial",
-    image: "/produtos/Linha Fabrica/2.png",
-    images: ["/produtos/Linha Fabrica/2.png"],
-    colors: [{ name: "Padrão", hex: "#4B5563" }],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
-    materials: "Tecido industrial de alta resistência",
-    description: "Uniforme profissional para ambiente industrial, desenvolvido para máxima durabilidade e conforto.",
-    features: ["Alta resistência", "Conforto prolongado", "Acabamento profissional", "Bolsos funcionais"],
-    careInstructions: ["Lavar à máquina até 60°C", "Pode usar alvejante", "Secar normalmente"],
-  },
-  {
     id: 8,
     name: "Uniforme Industrial Profissional 02",
     slug: "uniforme-industrial-02",
     category: "Industrial",
     image: "/produtos/Linha Fabrica/3.png",
-    images: ["/produtos/Linha Fabrica/3.png"],
-    colors: [{ name: "Padrão", hex: "#4B5563" }],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
+    images: [
+      "/produtos/Linha Fabrica/3.png"
+    ],
+    colors: [
+      {
+        name: "Padrão",
+        hex: "#4B5563"
+      }
+    ],
+    sizes: [
+      "PP",
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XGG"
+    ],
     materials: "Tecido industrial de alta resistência",
     description: "Uniforme profissional para ambiente industrial, desenvolvido para máxima durabilidade e conforto.",
-    features: ["Alta resistência", "Conforto prolongado", "Acabamento profissional", "Bolsos funcionais"],
-    careInstructions: ["Lavar à máquina até 60°C", "Pode usar alvejante", "Secar normalmente"],
+    features: [
+      "Alta resistência",
+      "Conforto prolongado",
+      "Acabamento profissional",
+      "Bolsos funcionais"
+    ],
+    careInstructions: [
+      "Lavar à máquina até 60°C",
+      "Pode usar alvejante",
+      "Secar normalmente"
+    ]
   },
   {
     id: 9,
@@ -162,13 +57,36 @@ export const products: Product[] = [
     slug: "uniforme-industrial-03",
     category: "Industrial",
     image: "/produtos/Linha Fabrica/4.png",
-    images: ["/produtos/Linha Fabrica/4.png"],
-    colors: [{ name: "Padrão", hex: "#4B5563" }],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
+    images: [
+      "/produtos/Linha Fabrica/4.png"
+    ],
+    colors: [
+      {
+        name: "Padrão",
+        hex: "#4B5563"
+      }
+    ],
+    sizes: [
+      "PP",
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XGG"
+    ],
     materials: "Tecido industrial de alta resistência",
     description: "Uniforme profissional para ambiente industrial, desenvolvido para máxima durabilidade e conforto.",
-    features: ["Alta resistência", "Conforto prolongado", "Acabamento profissional", "Bolsos funcionais"],
-    careInstructions: ["Lavar à máquina até 60°C", "Pode usar alvejante", "Secar normalmente"],
+    features: [
+      "Alta resistência",
+      "Conforto prolongado",
+      "Acabamento profissional",
+      "Bolsos funcionais"
+    ],
+    careInstructions: [
+      "Lavar à máquina até 60°C",
+      "Pode usar alvejante",
+      "Secar normalmente"
+    ]
   },
   {
     id: 10,
@@ -176,13 +94,36 @@ export const products: Product[] = [
     slug: "uniforme-industrial-04",
     category: "Industrial",
     image: "/produtos/Linha Fabrica/5.png",
-    images: ["/produtos/Linha Fabrica/5.png"],
-    colors: [{ name: "Padrão", hex: "#4B5563" }],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
+    images: [
+      "/produtos/Linha Fabrica/5.png"
+    ],
+    colors: [
+      {
+        name: "Padrão",
+        hex: "#4B5563"
+      }
+    ],
+    sizes: [
+      "PP",
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XGG"
+    ],
     materials: "Tecido industrial de alta resistência",
     description: "Uniforme profissional para ambiente industrial, desenvolvido para máxima durabilidade e conforto.",
-    features: ["Alta resistência", "Conforto prolongado", "Acabamento profissional", "Bolsos funcionais"],
-    careInstructions: ["Lavar à máquina até 60°C", "Pode usar alvejante", "Secar normalmente"],
+    features: [
+      "Alta resistência",
+      "Conforto prolongado",
+      "Acabamento profissional",
+      "Bolsos funcionais"
+    ],
+    careInstructions: [
+      "Lavar à máquina até 60°C",
+      "Pode usar alvejante",
+      "Secar normalmente"
+    ]
   },
   {
     id: 11,
@@ -190,13 +131,36 @@ export const products: Product[] = [
     slug: "uniforme-industrial-05",
     category: "Industrial",
     image: "/produtos/Linha Fabrica/6.png",
-    images: ["/produtos/Linha Fabrica/6.png"],
-    colors: [{ name: "Padrão", hex: "#4B5563" }],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
+    images: [
+      "/produtos/Linha Fabrica/6.png"
+    ],
+    colors: [
+      {
+        name: "Padrão",
+        hex: "#4B5563"
+      }
+    ],
+    sizes: [
+      "PP",
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XGG"
+    ],
     materials: "Tecido industrial de alta resistência",
     description: "Uniforme profissional para ambiente industrial, desenvolvido para máxima durabilidade e conforto.",
-    features: ["Alta resistência", "Conforto prolongado", "Acabamento profissional", "Bolsos funcionais"],
-    careInstructions: ["Lavar à máquina até 60°C", "Pode usar alvejante", "Secar normalmente"],
+    features: [
+      "Alta resistência",
+      "Conforto prolongado",
+      "Acabamento profissional",
+      "Bolsos funcionais"
+    ],
+    careInstructions: [
+      "Lavar à máquina até 60°C",
+      "Pode usar alvejante",
+      "Secar normalmente"
+    ]
   },
   {
     id: 12,
@@ -204,13 +168,36 @@ export const products: Product[] = [
     slug: "uniforme-industrial-06",
     category: "Industrial",
     image: "/produtos/Linha Fabrica/7.png",
-    images: ["/produtos/Linha Fabrica/7.png"],
-    colors: [{ name: "Padrão", hex: "#4B5563" }],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
+    images: [
+      "/produtos/Linha Fabrica/7.png"
+    ],
+    colors: [
+      {
+        name: "Padrão",
+        hex: "#4B5563"
+      }
+    ],
+    sizes: [
+      "PP",
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XGG"
+    ],
     materials: "Tecido industrial de alta resistência",
     description: "Uniforme profissional para ambiente industrial, desenvolvido para máxima durabilidade e conforto.",
-    features: ["Alta resistência", "Conforto prolongado", "Acabamento profissional", "Bolsos funcionais"],
-    careInstructions: ["Lavar à máquina até 60°C", "Pode usar alvejante", "Secar normalmente"],
+    features: [
+      "Alta resistência",
+      "Conforto prolongado",
+      "Acabamento profissional",
+      "Bolsos funcionais"
+    ],
+    careInstructions: [
+      "Lavar à máquina até 60°C",
+      "Pode usar alvejante",
+      "Secar normalmente"
+    ]
   },
   {
     id: 13,
@@ -218,13 +205,36 @@ export const products: Product[] = [
     slug: "uniforme-industrial-07",
     category: "Industrial",
     image: "/produtos/Linha Fabrica/8.png",
-    images: ["/produtos/Linha Fabrica/8.png"],
-    colors: [{ name: "Padrão", hex: "#4B5563" }],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
+    images: [
+      "/produtos/Linha Fabrica/8.png"
+    ],
+    colors: [
+      {
+        name: "Padrão",
+        hex: "#4B5563"
+      }
+    ],
+    sizes: [
+      "PP",
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XGG"
+    ],
     materials: "Tecido industrial de alta resistência",
     description: "Uniforme profissional para ambiente industrial, desenvolvido para máxima durabilidade e conforto.",
-    features: ["Alta resistência", "Conforto prolongado", "Acabamento profissional", "Bolsos funcionais"],
-    careInstructions: ["Lavar à máquina até 60°C", "Pode usar alvejante", "Secar normalmente"],
+    features: [
+      "Alta resistência",
+      "Conforto prolongado",
+      "Acabamento profissional",
+      "Bolsos funcionais"
+    ],
+    careInstructions: [
+      "Lavar à máquina até 60°C",
+      "Pode usar alvejante",
+      "Secar normalmente"
+    ]
   },
   {
     id: 14,
@@ -232,13 +242,36 @@ export const products: Product[] = [
     slug: "uniforme-industrial-08",
     category: "Industrial",
     image: "/produtos/Linha Fabrica/9.png",
-    images: ["/produtos/Linha Fabrica/9.png"],
-    colors: [{ name: "Padrão", hex: "#4B5563" }],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
+    images: [
+      "/produtos/Linha Fabrica/9.png"
+    ],
+    colors: [
+      {
+        name: "Padrão",
+        hex: "#4B5563"
+      }
+    ],
+    sizes: [
+      "PP",
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XGG"
+    ],
     materials: "Tecido industrial de alta resistência",
     description: "Uniforme profissional para ambiente industrial, desenvolvido para máxima durabilidade e conforto.",
-    features: ["Alta resistência", "Conforto prolongado", "Acabamento profissional", "Bolsos funcionais"],
-    careInstructions: ["Lavar à máquina até 60°C", "Pode usar alvejante", "Secar normalmente"],
+    features: [
+      "Alta resistência",
+      "Conforto prolongado",
+      "Acabamento profissional",
+      "Bolsos funcionais"
+    ],
+    careInstructions: [
+      "Lavar à máquina até 60°C",
+      "Pode usar alvejante",
+      "Secar normalmente"
+    ]
   },
   {
     id: 15,
@@ -246,13 +279,36 @@ export const products: Product[] = [
     slug: "uniforme-industrial-09",
     category: "Industrial",
     image: "/produtos/Linha Fabrica/10.png",
-    images: ["/produtos/Linha Fabrica/10.png"],
-    colors: [{ name: "Padrão", hex: "#4B5563" }],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
+    images: [
+      "/produtos/Linha Fabrica/10.png"
+    ],
+    colors: [
+      {
+        name: "Padrão",
+        hex: "#4B5563"
+      }
+    ],
+    sizes: [
+      "PP",
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XGG"
+    ],
     materials: "Tecido industrial de alta resistência",
     description: "Uniforme profissional para ambiente industrial, desenvolvido para máxima durabilidade e conforto.",
-    features: ["Alta resistência", "Conforto prolongado", "Acabamento profissional", "Bolsos funcionais"],
-    careInstructions: ["Lavar à máquina até 60°C", "Pode usar alvejante", "Secar normalmente"],
+    features: [
+      "Alta resistência",
+      "Conforto prolongado",
+      "Acabamento profissional",
+      "Bolsos funcionais"
+    ],
+    careInstructions: [
+      "Lavar à máquina até 60°C",
+      "Pode usar alvejante",
+      "Secar normalmente"
+    ]
   },
   {
     id: 16,
@@ -260,28 +316,73 @@ export const products: Product[] = [
     slug: "uniforme-industrial-10",
     category: "Industrial",
     image: "/produtos/Linha Fabrica/11.png",
-    images: ["/produtos/Linha Fabrica/11.png"],
-    colors: [{ name: "Padrão", hex: "#4B5563" }],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
+    images: [
+      "/produtos/Linha Fabrica/11.png"
+    ],
+    colors: [
+      {
+        name: "Padrão",
+        hex: "#4B5563"
+      }
+    ],
+    sizes: [
+      "PP",
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XGG"
+    ],
     materials: "Tecido industrial de alta resistência",
     description: "Uniforme profissional para ambiente industrial, desenvolvido para máxima durabilidade e conforto.",
-    features: ["Alta resistência", "Conforto prolongado", "Acabamento profissional", "Bolsos funcionais"],
-    careInstructions: ["Lavar à máquina até 60°C", "Pode usar alvejante", "Secar normalmente"],
+    features: [
+      "Alta resistência",
+      "Conforto prolongado",
+      "Acabamento profissional",
+      "Bolsos funcionais"
+    ],
+    careInstructions: [
+      "Lavar à máquina até 60°C",
+      "Pode usar alvejante",
+      "Secar normalmente"
+    ]
   },
-  // Linha Escritório
   {
     id: 17,
     name: "Uniforme Corporativo Executivo 01",
     slug: "uniforme-corporativo-01",
     category: "Corporativo",
     image: "/produtos/Linha Escritorio/12.png",
-    images: ["/produtos/Linha Escritorio/12.png"],
-    colors: [{ name: "Padrão", hex: "#1E40AF" }],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
+    images: [
+      "/produtos/Linha Escritorio/12.png"
+    ],
+    colors: [
+      {
+        name: "Padrão",
+        hex: "#1E40AF"
+      }
+    ],
+    sizes: [
+      "PP",
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XGG"
+    ],
     materials: "Tecido social premium",
     description: "Uniforme corporativo elegante e profissional, ideal para ambientes empresariais.",
-    features: ["Corte elegante", "Tecido premium", "Acabamento refinado", "Conforto durante todo o dia"],
-    careInstructions: ["Lavar à máquina até 30°C", "Passar a ferro", "Não usar secadora"],
+    features: [
+      "Corte elegante",
+      "Tecido premium",
+      "Acabamento refinado",
+      "Conforto durante todo o dia"
+    ],
+    careInstructions: [
+      "Lavar à máquina até 30°C",
+      "Passar a ferro",
+      "Não usar secadora"
+    ]
   },
   {
     id: 18,
@@ -289,13 +390,36 @@ export const products: Product[] = [
     slug: "uniforme-corporativo-02",
     category: "Corporativo",
     image: "/produtos/Linha Escritorio/13.png",
-    images: ["/produtos/Linha Escritorio/13.png"],
-    colors: [{ name: "Padrão", hex: "#1E40AF" }],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
+    images: [
+      "/produtos/Linha Escritorio/13.png"
+    ],
+    colors: [
+      {
+        name: "Padrão",
+        hex: "#1E40AF"
+      }
+    ],
+    sizes: [
+      "PP",
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XGG"
+    ],
     materials: "Tecido social premium",
     description: "Uniforme corporativo elegante e profissional, ideal para ambientes empresariais.",
-    features: ["Corte elegante", "Tecido premium", "Acabamento refinado", "Conforto durante todo o dia"],
-    careInstructions: ["Lavar à máquina até 30°C", "Passar a ferro", "Não usar secadora"],
+    features: [
+      "Corte elegante",
+      "Tecido premium",
+      "Acabamento refinado",
+      "Conforto durante todo o dia"
+    ],
+    careInstructions: [
+      "Lavar à máquina até 30°C",
+      "Passar a ferro",
+      "Não usar secadora"
+    ]
   },
   {
     id: 19,
@@ -303,13 +427,36 @@ export const products: Product[] = [
     slug: "uniforme-corporativo-03",
     category: "Corporativo",
     image: "/produtos/Linha Escritorio/14.png",
-    images: ["/produtos/Linha Escritorio/14.png"],
-    colors: [{ name: "Padrão", hex: "#1E40AF" }],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
+    images: [
+      "/produtos/Linha Escritorio/14.png"
+    ],
+    colors: [
+      {
+        name: "Padrão",
+        hex: "#1E40AF"
+      }
+    ],
+    sizes: [
+      "PP",
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XGG"
+    ],
     materials: "Tecido social premium",
     description: "Uniforme corporativo elegante e profissional, ideal para ambientes empresariais.",
-    features: ["Corte elegante", "Tecido premium", "Acabamento refinado", "Conforto durante todo o dia"],
-    careInstructions: ["Lavar à máquina até 30°C", "Passar a ferro", "Não usar secadora"],
+    features: [
+      "Corte elegante",
+      "Tecido premium",
+      "Acabamento refinado",
+      "Conforto durante todo o dia"
+    ],
+    careInstructions: [
+      "Lavar à máquina até 30°C",
+      "Passar a ferro",
+      "Não usar secadora"
+    ]
   },
   {
     id: 20,
@@ -317,13 +464,36 @@ export const products: Product[] = [
     slug: "uniforme-corporativo-04",
     category: "Corporativo",
     image: "/produtos/Linha Escritorio/15.png",
-    images: ["/produtos/Linha Escritorio/15.png"],
-    colors: [{ name: "Padrão", hex: "#1E40AF" }],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
+    images: [
+      "/produtos/Linha Escritorio/15.png"
+    ],
+    colors: [
+      {
+        name: "Padrão",
+        hex: "#1E40AF"
+      }
+    ],
+    sizes: [
+      "PP",
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XGG"
+    ],
     materials: "Tecido social premium",
     description: "Uniforme corporativo elegante e profissional, ideal para ambientes empresariais.",
-    features: ["Corte elegante", "Tecido premium", "Acabamento refinado", "Conforto durante todo o dia"],
-    careInstructions: ["Lavar à máquina até 30°C", "Passar a ferro", "Não usar secadora"],
+    features: [
+      "Corte elegante",
+      "Tecido premium",
+      "Acabamento refinado",
+      "Conforto durante todo o dia"
+    ],
+    careInstructions: [
+      "Lavar à máquina até 30°C",
+      "Passar a ferro",
+      "Não usar secadora"
+    ]
   },
   {
     id: 21,
@@ -331,13 +501,36 @@ export const products: Product[] = [
     slug: "uniforme-corporativo-05",
     category: "Corporativo",
     image: "/produtos/Linha Escritorio/16.png",
-    images: ["/produtos/Linha Escritorio/16.png"],
-    colors: [{ name: "Padrão", hex: "#1E40AF" }],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
+    images: [
+      "/produtos/Linha Escritorio/16.png"
+    ],
+    colors: [
+      {
+        name: "Padrão",
+        hex: "#1E40AF"
+      }
+    ],
+    sizes: [
+      "PP",
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XGG"
+    ],
     materials: "Tecido social premium",
     description: "Uniforme corporativo elegante e profissional, ideal para ambientes empresariais.",
-    features: ["Corte elegante", "Tecido premium", "Acabamento refinado", "Conforto durante todo o dia"],
-    careInstructions: ["Lavar à máquina até 30°C", "Passar a ferro", "Não usar secadora"],
+    features: [
+      "Corte elegante",
+      "Tecido premium",
+      "Acabamento refinado",
+      "Conforto durante todo o dia"
+    ],
+    careInstructions: [
+      "Lavar à máquina até 30°C",
+      "Passar a ferro",
+      "Não usar secadora"
+    ]
   },
   {
     id: 22,
@@ -345,13 +538,36 @@ export const products: Product[] = [
     slug: "uniforme-corporativo-06",
     category: "Corporativo",
     image: "/produtos/Linha Escritorio/17.png",
-    images: ["/produtos/Linha Escritorio/17.png"],
-    colors: [{ name: "Padrão", hex: "#1E40AF" }],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
+    images: [
+      "/produtos/Linha Escritorio/17.png"
+    ],
+    colors: [
+      {
+        name: "Padrão",
+        hex: "#1E40AF"
+      }
+    ],
+    sizes: [
+      "PP",
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XGG"
+    ],
     materials: "Tecido social premium",
     description: "Uniforme corporativo elegante e profissional, ideal para ambientes empresariais.",
-    features: ["Corte elegante", "Tecido premium", "Acabamento refinado", "Conforto durante todo o dia"],
-    careInstructions: ["Lavar à máquina até 30°C", "Passar a ferro", "Não usar secadora"],
+    features: [
+      "Corte elegante",
+      "Tecido premium",
+      "Acabamento refinado",
+      "Conforto durante todo o dia"
+    ],
+    careInstructions: [
+      "Lavar à máquina até 30°C",
+      "Passar a ferro",
+      "Não usar secadora"
+    ]
   },
   {
     id: 23,
@@ -359,13 +575,36 @@ export const products: Product[] = [
     slug: "uniforme-corporativo-07",
     category: "Corporativo",
     image: "/produtos/Linha Escritorio/18.png",
-    images: ["/produtos/Linha Escritorio/18.png"],
-    colors: [{ name: "Padrão", hex: "#1E40AF" }],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
+    images: [
+      "/produtos/Linha Escritorio/18.png"
+    ],
+    colors: [
+      {
+        name: "Padrão",
+        hex: "#1E40AF"
+      }
+    ],
+    sizes: [
+      "PP",
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XGG"
+    ],
     materials: "Tecido social premium",
     description: "Uniforme corporativo elegante e profissional, ideal para ambientes empresariais.",
-    features: ["Corte elegante", "Tecido premium", "Acabamento refinado", "Conforto durante todo o dia"],
-    careInstructions: ["Lavar à máquina até 30°C", "Passar a ferro", "Não usar secadora"],
+    features: [
+      "Corte elegante",
+      "Tecido premium",
+      "Acabamento refinado",
+      "Conforto durante todo o dia"
+    ],
+    careInstructions: [
+      "Lavar à máquina até 30°C",
+      "Passar a ferro",
+      "Não usar secadora"
+    ]
   },
   {
     id: 24,
@@ -373,13 +612,36 @@ export const products: Product[] = [
     slug: "uniforme-corporativo-08",
     category: "Corporativo",
     image: "/produtos/Linha Escritorio/19.png",
-    images: ["/produtos/Linha Escritorio/19.png"],
-    colors: [{ name: "Padrão", hex: "#1E40AF" }],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
+    images: [
+      "/produtos/Linha Escritorio/19.png"
+    ],
+    colors: [
+      {
+        name: "Padrão",
+        hex: "#1E40AF"
+      }
+    ],
+    sizes: [
+      "PP",
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XGG"
+    ],
     materials: "Tecido social premium",
     description: "Uniforme corporativo elegante e profissional, ideal para ambientes empresariais.",
-    features: ["Corte elegante", "Tecido premium", "Acabamento refinado", "Conforto durante todo o dia"],
-    careInstructions: ["Lavar à máquina até 30°C", "Passar a ferro", "Não usar secadora"],
+    features: [
+      "Corte elegante",
+      "Tecido premium",
+      "Acabamento refinado",
+      "Conforto durante todo o dia"
+    ],
+    careInstructions: [
+      "Lavar à máquina até 30°C",
+      "Passar a ferro",
+      "Não usar secadora"
+    ]
   },
   {
     id: 25,
@@ -387,13 +649,36 @@ export const products: Product[] = [
     slug: "uniforme-corporativo-09",
     category: "Corporativo",
     image: "/produtos/Linha Escritorio/20.png",
-    images: ["/produtos/Linha Escritorio/20.png"],
-    colors: [{ name: "Padrão", hex: "#1E40AF" }],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
+    images: [
+      "/produtos/Linha Escritorio/20.png"
+    ],
+    colors: [
+      {
+        name: "Padrão",
+        hex: "#1E40AF"
+      }
+    ],
+    sizes: [
+      "PP",
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XGG"
+    ],
     materials: "Tecido social premium",
     description: "Uniforme corporativo elegante e profissional, ideal para ambientes empresariais.",
-    features: ["Corte elegante", "Tecido premium", "Acabamento refinado", "Conforto durante todo o dia"],
-    careInstructions: ["Lavar à máquina até 30°C", "Passar a ferro", "Não usar secadora"],
+    features: [
+      "Corte elegante",
+      "Tecido premium",
+      "Acabamento refinado",
+      "Conforto durante todo o dia"
+    ],
+    careInstructions: [
+      "Lavar à máquina até 30°C",
+      "Passar a ferro",
+      "Não usar secadora"
+    ]
   },
   {
     id: 26,
@@ -401,28 +686,73 @@ export const products: Product[] = [
     slug: "uniforme-corporativo-10",
     category: "Corporativo",
     image: "/produtos/Linha Escritorio/21.png",
-    images: ["/produtos/Linha Escritorio/21.png"],
-    colors: [{ name: "Padrão", hex: "#1E40AF" }],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
+    images: [
+      "/produtos/Linha Escritorio/21.png"
+    ],
+    colors: [
+      {
+        name: "Padrão",
+        hex: "#1E40AF"
+      }
+    ],
+    sizes: [
+      "PP",
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XGG"
+    ],
     materials: "Tecido social premium",
     description: "Uniforme corporativo elegante e profissional, ideal para ambientes empresariais.",
-    features: ["Corte elegante", "Tecido premium", "Acabamento refinado", "Conforto durante todo o dia"],
-    careInstructions: ["Lavar à máquina até 30°C", "Passar a ferro", "Não usar secadora"],
+    features: [
+      "Corte elegante",
+      "Tecido premium",
+      "Acabamento refinado",
+      "Conforto durante todo o dia"
+    ],
+    careInstructions: [
+      "Lavar à máquina até 30°C",
+      "Passar a ferro",
+      "Não usar secadora"
+    ]
   },
-  // Linha Hospitalar
   {
     id: 27,
     name: "Uniforme Hospitalar Profissional 01",
     slug: "uniforme-hospitalar-01",
     category: "Saúde",
     image: "/produtos/Linha Hospitalar/22.png",
-    images: ["/produtos/Linha Hospitalar/22.png"],
-    colors: [{ name: "Padrão", hex: "#14B8A6" }],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
+    images: [
+      "/produtos/Linha Hospitalar/22.png"
+    ],
+    colors: [
+      {
+        name: "Padrão",
+        hex: "#14B8A6"
+      }
+    ],
+    sizes: [
+      "PP",
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XGG"
+    ],
     materials: "Tecido antibacteriano premium",
     description: "Uniforme hospitalar de alta qualidade, desenvolvido para profissionais da saúde.",
-    features: ["Tecido antibacteriano", "Conforto prolongado", "Fácil higienização", "Bolsos funcionais"],
-    careInstructions: ["Lavar à máquina até 60°C", "Pode usar alvejante", "Secar normalmente"],
+    features: [
+      "Tecido antibacteriano",
+      "Conforto prolongado",
+      "Fácil higienização",
+      "Bolsos funcionais"
+    ],
+    careInstructions: [
+      "Lavar à máquina até 60°C",
+      "Pode usar alvejante",
+      "Secar normalmente"
+    ]
   },
   {
     id: 28,
@@ -430,13 +760,36 @@ export const products: Product[] = [
     slug: "uniforme-hospitalar-02",
     category: "Saúde",
     image: "/produtos/Linha Hospitalar/23.png",
-    images: ["/produtos/Linha Hospitalar/23.png"],
-    colors: [{ name: "Padrão", hex: "#14B8A6" }],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
+    images: [
+      "/produtos/Linha Hospitalar/23.png"
+    ],
+    colors: [
+      {
+        name: "Padrão",
+        hex: "#14B8A6"
+      }
+    ],
+    sizes: [
+      "PP",
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XGG"
+    ],
     materials: "Tecido antibacteriano premium",
     description: "Uniforme hospitalar de alta qualidade, desenvolvido para profissionais da saúde.",
-    features: ["Tecido antibacteriano", "Conforto prolongado", "Fácil higienização", "Bolsos funcionais"],
-    careInstructions: ["Lavar à máquina até 60°C", "Pode usar alvejante", "Secar normalmente"],
+    features: [
+      "Tecido antibacteriano",
+      "Conforto prolongado",
+      "Fácil higienização",
+      "Bolsos funcionais"
+    ],
+    careInstructions: [
+      "Lavar à máquina até 60°C",
+      "Pode usar alvejante",
+      "Secar normalmente"
+    ]
   },
   {
     id: 29,
@@ -444,28 +797,73 @@ export const products: Product[] = [
     slug: "uniforme-hospitalar-03",
     category: "Saúde",
     image: "/produtos/Linha Hospitalar/24.png",
-    images: ["/produtos/Linha Hospitalar/24.png"],
-    colors: [{ name: "Padrão", hex: "#14B8A6" }],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
+    images: [
+      "/produtos/Linha Hospitalar/24.png"
+    ],
+    colors: [
+      {
+        name: "Padrão",
+        hex: "#14B8A6"
+      }
+    ],
+    sizes: [
+      "PP",
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XGG"
+    ],
     materials: "Tecido antibacteriano premium",
     description: "Uniforme hospitalar de alta qualidade, desenvolvido para profissionais da saúde.",
-    features: ["Tecido antibacteriano", "Conforto prolongado", "Fácil higienização", "Bolsos funcionais"],
-    careInstructions: ["Lavar à máquina até 60°C", "Pode usar alvejante", "Secar normalmente"],
+    features: [
+      "Tecido antibacteriano",
+      "Conforto prolongado",
+      "Fácil higienização",
+      "Bolsos funcionais"
+    ],
+    careInstructions: [
+      "Lavar à máquina até 60°C",
+      "Pode usar alvejante",
+      "Secar normalmente"
+    ]
   },
-  // Linha Segurança
   {
     id: 30,
     name: "Uniforme de Segurança Profissional 01",
     slug: "uniforme-seguranca-01",
     category: "Segurança",
     image: "/produtos/Linha Segurança/25.png",
-    images: ["/produtos/Linha Segurança/25.png"],
-    colors: [{ name: "Padrão", hex: "#1E3A5F" }],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
+    images: [
+      "/produtos/Linha Segurança/25.png"
+    ],
+    colors: [
+      {
+        name: "Padrão",
+        hex: "#1E3A5F"
+      }
+    ],
+    sizes: [
+      "PP",
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XGG"
+    ],
     materials: "Tecido reforçado de alta resistência",
     description: "Uniforme de segurança profissional, desenvolvido para máxima proteção e durabilidade.",
-    features: ["Alta resistência", "Faixas refletivas", "Bolsos reforçados", "Proteção certificada"],
-    careInstructions: ["Lavar à máquina até 60°C", "Pode usar alvejante", "Secar normalmente"],
+    features: [
+      "Alta resistência",
+      "Faixas refletivas",
+      "Bolsos reforçados",
+      "Proteção certificada"
+    ],
+    careInstructions: [
+      "Lavar à máquina até 60°C",
+      "Pode usar alvejante",
+      "Secar normalmente"
+    ]
   },
   {
     id: 31,
@@ -473,13 +871,36 @@ export const products: Product[] = [
     slug: "uniforme-seguranca-02",
     category: "Segurança",
     image: "/produtos/Linha Segurança/26.png",
-    images: ["/produtos/Linha Segurança/26.png"],
-    colors: [{ name: "Padrão", hex: "#1E3A5F" }],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
+    images: [
+      "/produtos/Linha Segurança/26.png"
+    ],
+    colors: [
+      {
+        name: "Padrão",
+        hex: "#1E3A5F"
+      }
+    ],
+    sizes: [
+      "PP",
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XGG"
+    ],
     materials: "Tecido reforçado de alta resistência",
     description: "Uniforme de segurança profissional, desenvolvido para máxima proteção e durabilidade.",
-    features: ["Alta resistência", "Faixas refletivas", "Bolsos reforçados", "Proteção certificada"],
-    careInstructions: ["Lavar à máquina até 60°C", "Pode usar alvejante", "Secar normalmente"],
+    features: [
+      "Alta resistência",
+      "Faixas refletivas",
+      "Bolsos reforçados",
+      "Proteção certificada"
+    ],
+    careInstructions: [
+      "Lavar à máquina até 60°C",
+      "Pode usar alvejante",
+      "Secar normalmente"
+    ]
   },
   {
     id: 32,
@@ -487,13 +908,36 @@ export const products: Product[] = [
     slug: "uniforme-seguranca-03",
     category: "Segurança",
     image: "/produtos/Linha Segurança/27.png",
-    images: ["/produtos/Linha Segurança/27.png"],
-    colors: [{ name: "Padrão", hex: "#1E3A5F" }],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
+    images: [
+      "/produtos/Linha Segurança/27.png"
+    ],
+    colors: [
+      {
+        name: "Padrão",
+        hex: "#1E3A5F"
+      }
+    ],
+    sizes: [
+      "PP",
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XGG"
+    ],
     materials: "Tecido reforçado de alta resistência",
     description: "Uniforme de segurança profissional, desenvolvido para máxima proteção e durabilidade.",
-    features: ["Alta resistência", "Faixas refletivas", "Bolsos reforçados", "Proteção certificada"],
-    careInstructions: ["Lavar à máquina até 60°C", "Pode usar alvejante", "Secar normalmente"],
+    features: [
+      "Alta resistência",
+      "Faixas refletivas",
+      "Bolsos reforçados",
+      "Proteção certificada"
+    ],
+    careInstructions: [
+      "Lavar à máquina até 60°C",
+      "Pode usar alvejante",
+      "Secar normalmente"
+    ]
   },
   {
     id: 33,
@@ -501,13 +945,36 @@ export const products: Product[] = [
     slug: "uniforme-seguranca-04",
     category: "Segurança",
     image: "/produtos/Linha Segurança/28.png",
-    images: ["/produtos/Linha Segurança/28.png"],
-    colors: [{ name: "Padrão", hex: "#1E3A5F" }],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
+    images: [
+      "/produtos/Linha Segurança/28.png"
+    ],
+    colors: [
+      {
+        name: "Padrão",
+        hex: "#1E3A5F"
+      }
+    ],
+    sizes: [
+      "PP",
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XGG"
+    ],
     materials: "Tecido reforçado de alta resistência",
     description: "Uniforme de segurança profissional, desenvolvido para máxima proteção e durabilidade.",
-    features: ["Alta resistência", "Faixas refletivas", "Bolsos reforçados", "Proteção certificada"],
-    careInstructions: ["Lavar à máquina até 60°C", "Pode usar alvejante", "Secar normalmente"],
+    features: [
+      "Alta resistência",
+      "Faixas refletivas",
+      "Bolsos reforçados",
+      "Proteção certificada"
+    ],
+    careInstructions: [
+      "Lavar à máquina até 60°C",
+      "Pode usar alvejante",
+      "Secar normalmente"
+    ]
   },
   {
     id: 34,
@@ -515,13 +982,36 @@ export const products: Product[] = [
     slug: "uniforme-seguranca-05",
     category: "Segurança",
     image: "/produtos/Linha Segurança/29.png",
-    images: ["/produtos/Linha Segurança/29.png"],
-    colors: [{ name: "Padrão", hex: "#1E3A5F" }],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
+    images: [
+      "/produtos/Linha Segurança/29.png"
+    ],
+    colors: [
+      {
+        name: "Padrão",
+        hex: "#1E3A5F"
+      }
+    ],
+    sizes: [
+      "PP",
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XGG"
+    ],
     materials: "Tecido reforçado de alta resistência",
     description: "Uniforme de segurança profissional, desenvolvido para máxima proteção e durabilidade.",
-    features: ["Alta resistência", "Faixas refletivas", "Bolsos reforçados", "Proteção certificada"],
-    careInstructions: ["Lavar à máquina até 60°C", "Pode usar alvejante", "Secar normalmente"],
+    features: [
+      "Alta resistência",
+      "Faixas refletivas",
+      "Bolsos reforçados",
+      "Proteção certificada"
+    ],
+    careInstructions: [
+      "Lavar à máquina até 60°C",
+      "Pode usar alvejante",
+      "Secar normalmente"
+    ]
   },
   {
     id: 35,
@@ -529,13 +1019,36 @@ export const products: Product[] = [
     slug: "uniforme-seguranca-06",
     category: "Segurança",
     image: "/produtos/Linha Segurança/30.png",
-    images: ["/produtos/Linha Segurança/30.png"],
-    colors: [{ name: "Padrão", hex: "#1E3A5F" }],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
+    images: [
+      "/produtos/Linha Segurança/30.png"
+    ],
+    colors: [
+      {
+        name: "Padrão",
+        hex: "#1E3A5F"
+      }
+    ],
+    sizes: [
+      "PP",
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XGG"
+    ],
     materials: "Tecido reforçado de alta resistência",
     description: "Uniforme de segurança profissional, desenvolvido para máxima proteção e durabilidade.",
-    features: ["Alta resistência", "Faixas refletivas", "Bolsos reforçados", "Proteção certificada"],
-    careInstructions: ["Lavar à máquina até 60°C", "Pode usar alvejante", "Secar normalmente"],
+    features: [
+      "Alta resistência",
+      "Faixas refletivas",
+      "Bolsos reforçados",
+      "Proteção certificada"
+    ],
+    careInstructions: [
+      "Lavar à máquina até 60°C",
+      "Pode usar alvejante",
+      "Secar normalmente"
+    ]
   },
   {
     id: 36,
@@ -543,12 +1056,35 @@ export const products: Product[] = [
     slug: "uniforme-seguranca-07",
     category: "Segurança",
     image: "/produtos/Linha Segurança/31.png",
-    images: ["/produtos/Linha Segurança/31.png"],
-    colors: [{ name: "Padrão", hex: "#1E3A5F" }],
-    sizes: ["PP", "P", "M", "G", "GG", "XGG"],
+    images: [
+      "/produtos/Linha Segurança/31.png"
+    ],
+    colors: [
+      {
+        name: "Padrão",
+        hex: "#1E3A5F"
+      }
+    ],
+    sizes: [
+      "PP",
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XGG"
+    ],
     materials: "Tecido reforçado de alta resistência",
     description: "Uniforme de segurança profissional, desenvolvido para máxima proteção e durabilidade.",
-    features: ["Alta resistência", "Faixas refletivas", "Bolsos reforçados", "Proteção certificada"],
-    careInstructions: ["Lavar à máquina até 60°C", "Pode usar alvejante", "Secar normalmente"],
-  },
+    features: [
+      "Alta resistência",
+      "Faixas refletivas",
+      "Bolsos reforçados",
+      "Proteção certificada"
+    ],
+    careInstructions: [
+      "Lavar à máquina até 60°C",
+      "Pode usar alvejante",
+      "Secar normalmente"
+    ]
+  }
 ]

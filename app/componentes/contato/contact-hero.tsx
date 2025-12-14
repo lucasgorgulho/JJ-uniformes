@@ -7,7 +7,7 @@ export function ContactHero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/professional-customer-service-team-wearing-headsets.jpg"
+          src="/contato/contact-hero.jpg"
           alt="Equipe de atendimento JJ Uniformes"
           fill
           className="object-cover"

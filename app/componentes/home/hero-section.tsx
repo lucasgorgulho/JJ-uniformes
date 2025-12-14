@@ -4,7 +4,7 @@ export function HeroSection() {
   return (
     <section className="relative min-h-[70vh] sm:min-h-[80vh] md:min-h-screen overflow-hidden">
       <Image
-        src="/professional-business-team-wearing-elegant-corpora.jpg"
+        src="/hero/hero-bg.jpg"
         alt="JJ Uniformes - Uniformes Profissionais"
         fill
         className="object-cover object-center"

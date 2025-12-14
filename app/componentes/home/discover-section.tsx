@@ -3,25 +3,25 @@ import Image from "next/image"
 const collections = [
   {
     title: "Linha Executiva",
-    image: "/professional-man-in-elegant-black-business-suit.jpg",
+    image: "/Descubra/executiva.jpg",
     cta: "Descubra",
     href: "/executiva",
   },
   {
     title: "Linha Hospitalar",
-    image: "/teal-medical-scrubs-uniform.jpg",
+    image: "/Descubra/hospitalar.jpg",
     cta: "Descubra",
     href: "/hospitalar",
   },
   {
     title: "Linha Industrial",
-    image: "/professional-working-outdoors.jpg",
+    image: "/Descubra/industrial.jpg",
     cta: "Descubra",
     href: "/industrial",
   },
   {
     title: "Personalização",
-    image: "/professional-uniform-catalog-cover-design-elegant.jpg",
+    image: "/Descubra/personalizacao.jpg",
     cta: "Descubra",
     href: "/personalizacao",
   },
@@ -43,10 +43,11 @@ export function DiscoverSection() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 max-w-6xl mx-auto">
           {collections.map((item, index) => (
             <a key={index} href={item.href} className="group relative block overflow-hidden rounded-lg md:rounded-xl">
+              
               {/* Image container */}
               <div className="relative aspect-[3/4] overflow-hidden">
                 <Image
-                  src={item.image || "/placeholder.svg"}
+                  src={item.image}
                   alt={item.title}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"

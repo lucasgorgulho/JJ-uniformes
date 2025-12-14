@@ -20,7 +20,7 @@ export function ProductsHeroBanner({ onSearch }: ProductsHeroBannerProps) {
   return (
     <section className="relative min-h-[200px] sm:min-h-[280px] md:min-h-[350px] overflow-hidden">
       <Image
-        src="/fashion-catalog-photoshoot-with-professional-cloth.jpg"
+        src="/catalogo/catalog-hero.jpg"
         alt="JJ Uniformes - Nossos Produtos"
         fill
         className="object-cover"

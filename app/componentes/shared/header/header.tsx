@@ -2,17 +2,31 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { Menu, X } from "lucide-react";
+import { useState } from "react";
 
 export default function Header() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
+    <>
     <header className="bg-[#10827d] shadow relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-24">
+        <div className="flex items-center h-24 gap-3">
           
+          {/* Botão menu mobile */}
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden text-white p-2"
+            aria-label="Menu"
+          >
+            <Menu size={28} />
+          </button>
+
           {/* 🔰 Logo + Título Responsivo */}
           <Link
             href="/"
-            className="flex items-center gap-2 sm:gap-3 select-none"
+            className="flex items-center gap-2 sm:gap-3 select-none flex-1"
           >
             <Image
               src="/Distribuidora.svg"
@@ -51,7 +65,7 @@ export default function Header() {
             <Link href="/" className="text-white text-base font-medium hover:text-gray-100 transition">
               Home
             </Link>
-            <Link href="/quem_somos" className="text-white text-base font-medium hover:text-gray-100 transition">
+            <Link href="/quem-somos" className="text-white text-base font-medium hover:text-gray-100 transition">
               Quem Somos
             </Link>
             <Link href="/produtos" className="text-white text-base font-medium hover:text-gray-100 transition">
@@ -67,13 +81,35 @@ export default function Header() {
               Catalogo
             </Link>
           </nav>
-
-         
         </div>
       </div>
 
       {/* Linha decorativa inferior */}
       <div className="w-full h-[2px] bg-white/20"></div>
     </header>
+
+    {/* Menu mobile lateral */}
+    {mobileMenuOpen && (
+      <>
+        <div className="fixed inset-0 bg-black/50 z-40" onClick={() => setMobileMenuOpen(false)} />
+        <nav className="fixed top-0 left-0 w-72 bg-[#10827d] z-50 shadow-2xl rounded-r-2xl">
+          <div className="flex items-center justify-between p-4 border-b border-white/20">
+            <span className="text-white font-bold text-lg">Menu</span>
+            <button onClick={() => setMobileMenuOpen(false)} className="text-white p-2">
+              <X size={24} />
+            </button>
+          </div>
+          <div className="flex flex-col py-2">
+            <Link href="/" onClick={() => setMobileMenuOpen(false)} className="text-white px-6 py-4 hover:bg-white/10 border-b border-white/10">Home</Link>
+            <Link href="/quem-somos" onClick={() => setMobileMenuOpen(false)} className="text-white px-6 py-4 hover:bg-white/10 border-b border-white/10">Quem Somos</Link>
+            <Link href="/produtos" onClick={() => setMobileMenuOpen(false)} className="text-white px-6 py-4 hover:bg-white/10 border-b border-white/10">Produtos</Link>
+            <Link href="/orcamento" onClick={() => setMobileMenuOpen(false)} className="text-white px-6 py-4 hover:bg-white/10 border-b border-white/10">Orçamento</Link>
+            <Link href="/contato" onClick={() => setMobileMenuOpen(false)} className="text-white px-6 py-4 hover:bg-white/10 border-b border-white/10">Contato</Link>
+            <Link href="/catalogo" onClick={() => setMobileMenuOpen(false)} className="text-white px-6 py-4 hover:bg-white/10 border-b border-white/10">Catalogo</Link>
+          </div>
+        </nav>
+      </>
+    )}
+    </>
   );
 }

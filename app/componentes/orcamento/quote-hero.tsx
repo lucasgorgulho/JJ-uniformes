@@ -5,7 +5,7 @@ export function QuoteHero() {
   return (
     <section className="relative min-h-[380px] sm:min-h-[420px] md:min-h-[500px] overflow-hidden">
       <Image
-        src="/business-meeting-handshake-professional-office-mod.jpg"
+        src="/orcamento/quote-hero.jpg"
         alt="Solicite seu Orçamento"
         fill
         className="object-cover"

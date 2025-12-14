@@ -124,7 +124,7 @@ export default function Carousel({ items, interval = 5000 }: CarouselProps) {
                   border: "2px dashed rgba(255,255,255,0.25)",
                 }}
               >
-                <div className="relative flex flex-col items-center justify-center w-full h-full p-3">
+                <div className="relative flex flex-col items-center justify-center w-full h-full ">
                   <div
                     className="absolute inset-2 border border-dashed rounded-lg pointer-events-none"
                     style={{ borderColor: "rgba(255,255,255,0.3)" }}

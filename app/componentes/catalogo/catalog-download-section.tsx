@@ -56,7 +56,7 @@ export default function CatalogoDownload() {
               <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8 max-w-md mx-auto">
                 Todos os nossos produtos em um só lugar. Descubra as melhores opções de uniformes para o seu negócio.
               </p>
-              <a href="/catalogo-jj-uniformes.pdf" download>
+              <a href="/Apresentacao_JJ-Uniformes_2025.pdf" download="Catalogo-JJ-Uniformes-2025.pdf">
                 <Button
                   size="lg"
                   className="w-full sm:w-auto bg-teal-600 hover:bg-teal-700 text-white px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg rounded-xl"
@@ -65,7 +65,7 @@ export default function CatalogoDownload() {
                   Baixar Catálogo em PDF
                 </Button>
               </a>
-              <p className="text-xs sm:text-sm text-gray-500 mt-3 sm:mt-4">Download gratuito • 15MB</p>
+              <p className="text-xs sm:text-sm text-gray-500 mt-3 sm:mt-4">Download gratuito</p>
             </div>
           </div>
         </div>
